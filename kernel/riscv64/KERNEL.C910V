@@ -188,3 +188,8 @@ endif
 ifndef ZGEMM_BETA
 ZGEMM_BETA = ../generic/zgemm_beta.c
 endif
+
+SNRM2KERNEL  = ../riscv64/nrm2.c
+DNRM2KERNEL  = ../riscv64/nrm2.c
+CNRM2KERNEL  = ../riscv64/znrm2.c
+ZNRM2KERNEL  = ../riscv64/znrm2.c

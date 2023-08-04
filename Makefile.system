@@ -1592,6 +1592,8 @@ ifndef FCOMMON_OPT
 FCOMMON_OPT = -O2 -frecursive
 endif
 
+COMMON_OPT += -fno-tree-vectorize
+
 override CFLAGS     += $(COMMON_OPT) $(CCOMMON_OPT) -I$(TOPDIR)
 override PFLAGS     += $(COMMON_OPT) $(CCOMMON_OPT) -I$(TOPDIR) -DPROFILE $(COMMON_PROF)
 override FFLAGS     += $(COMMON_OPT) $(FCOMMON_OPT)
